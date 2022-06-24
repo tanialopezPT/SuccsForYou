@@ -22,15 +22,22 @@ body {
 h1 {
   font-size: 35px;
   margin-left: 90px;
+  margin-top: 100px;
+  margin-bottom: 15px;
   font-family: 'Nunito', sans-serif;
   font-family: 'Roboto', sans-serif;
   width: 85%;
   line-height: 45px;
+  font-weight: lighter;
 }
 
+.secondtext{
+  text-align: center;
+  align-content: center;
+}
 
 img {
-  max-width:100%;
+  width:120%;
   top: 2em;
   }
 
@@ -40,17 +47,44 @@ img {
   padding-top: 45px;
 }
 
-
-button {
-  background-color: gray;
-  color: white;
-  padding: 15px 32px;
+.firstbutton{
+  color: purple;
+  padding: 15px 22px;
   text-align: center;
-  margin-top: 275px;
+  margin-top: 315px;
   margin-left: 90px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
 
+
+/*SECOND PAGE BUTTONS*/
+
+.btngroup {
+  display: inline-block;
+  color: purple;
+  cursor: pointer;
+  padding: 25px 12px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 35px;
+  margin-left: 200px;
+  margin-right: 100px;
+  position: relative;
+  font-weight: bold;
+  height:67px;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.buttons :hover {
+  background: rgba(168, 145, 189, 1)
 
 }
+
+/*LOGO*/
 
 .logo {
   width: 20%;
@@ -59,14 +93,29 @@ button {
   margin-right: auto;
 }
 
+/*WAVE IMAGE*/
 .wave-container {
   background: #white;
 
 }
 .wave-container > svg {
   display: block;
+  margin:auto;
+  position: fixed;
 
 }
+
+/*ALL BUTTONS*/
+
+button {
+  padding: 20px;
+  background-color: white;
+  border: 2px solid purple;
+  color: purple;
+
+}
+
+
 
 
 /* .links {
