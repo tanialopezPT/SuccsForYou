@@ -1,4 +1,7 @@
 
+
+//NOTES APP//
+
 const notesContainer = document.getElementById("app");
 const addNoteButton = notesContainer.querySelector(".add-note");
 
@@ -22,7 +25,7 @@ function createNoteElement(id, content) {
 
   element.classList.add("note");
   element.value = content;
-  element.placeholder = "Empty Sticky Note";
+  // element.placeholder = "Empty Sticky Note";
 
   element.addEventListener("change", () => {
     updateNote(id, element.value);
@@ -73,17 +76,9 @@ function deleteNote(id, element) {
 
 // Copying to care plan //
 
-function myFunction() {
-    // Get the text field
-    var copyText = document.getElementsByTagNameNS("p");
-  
-    // Select the text field
-    copyText.select(); 
-    copyText.setSelectionRange(0, 99999); // For mobile devices
-  
-     // Copy the text inside the text field
-    navigator.clipboard.writeText(copyText.value);
-  
-    // Alert the copied text
-    alert("Copied the text: " + copyText.value);
-  }
+function copyToClipboard(elementId) {
+  var text = document.getElementById(elementId).innerHTML;
+  let textarea = document.getElementById("select-this");
+  textarea.innerHTML = text;
+  textarea.focus();
+}

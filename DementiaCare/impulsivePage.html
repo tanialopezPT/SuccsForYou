@@ -34,16 +34,16 @@
       <div class="card">
         <div class="container">
           <h4><b>✅ Remain calm</b></h4>
-          <p>
+          <p id="p1">
             The last thing you want to do is upset your client even more. Take a
             deep breath and speak with a soft voice.
           </p>
         </div>
-        <a href="careplan.html">
-          <button class="careplan-btn">Add to Care Plan</button>
+        <a href="">
+          <button onclick="copyToClipboard('p1')">Add To Care Plan</button>
         </a>
       </div>
-      <div class="card">
+      <!-- <div class="card">
         <div class="container">
           <h4><b>✅ Remain calm</b></h4>
           <p>
@@ -67,10 +67,29 @@
           <button class="careplan-btn">Add to Care Plan</button>
         </a>
       </div>
-    </main>
+    </main> -->
+
+    <div id="app">
+      <textarea id="select-this" class="note"></textarea>
+      <button class="add-note" type="button">Add Another</button>
+    </div>
+
 
     <a href="secondpage.html">
       <button class="firstbutton">Go Back</button>
+      <a href="careplan.html">
+        <button class="firstbutton">My Care Plan</button>
+
+      <script>
+
+function copyToClipboard(elementId) {
+  var text = document.getElementById(elementId).value;
+  let textarea = document.getElementById("select-this");
+  textarea.innerHTML = text;
+  textarea.focus();
+}
+      </script>
+      
     </a>
   </body>
 </html>
