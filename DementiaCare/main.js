@@ -58,27 +58,22 @@ function addNote() {
   saveNotes(notes);
 }
 
-function updateNote(id, newContent) {
-  const notes = getNotes();
-  const targetNote = notes.filter((note) => note.id == id)[0];
+// function updateNote(id, newContent) {
+//   const notes = getNotes();
+//   const targetNote = notes.filter((note) => note.id == id)[0];
 
-  targetNote.content = newContent;
-  saveNotes(notes);
-}
+//   targetNote.content = newContent;
+//   saveNotes(notes);
+// }
 
-function deleteNote(id, element) {
-  const notes = getNotes().filter((note) => note.id != id);
+// function deleteNote(id, element) {
+//   const notes = getNotes().filter((note) => note.id != id);
 
-  saveNotes(notes);
-  notesContainer.removeChild(element);
-}
+//   saveNotes(notes);
+//   notesContainer.removeChild(element);
+// }
 
 
 // Copying to care plan //
 
-function copyToClipboard(elementId) {
-  var text = document.getElementById(elementId).innerHTML;
-  let textarea = document.getElementById("select-this");
-  textarea.innerHTML = text;
-  textarea.focus();
-}
+

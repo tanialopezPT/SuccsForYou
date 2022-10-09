@@ -10,11 +10,20 @@
     <title>Document</title>
   </head>
   <body>
+    <h1>My Care Plan</h1>
+
     <div id="app">
-      <textarea class="note"> Add to your care plan</textarea>
-      <button class="add-note" type="button">Add Another Note</button>
+      <textarea id="select-this" class="note"></textarea>
+      <button class="add-note" type="button">Add Another</button>
     </div>
 
-    <script src="main.js"></script>
+    <script>
+      function copyToClipboard(elementId) {
+        var text = document.getElementById(elementId).value;
+        let textarea = document.getElementById("select-this");
+        textarea.innerHTML = text;
+        textarea.focus();
+      }
+    </script>
   </body>
 </html>
