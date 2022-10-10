@@ -13,17 +13,10 @@
     <h1>My Care Plan</h1>
 
     <div id="app">
-      <textarea id="select-this" class="note"></textarea>
-      <button class="add-note" type="button">Add Another</button>
+      <input class="textbox" type="text"></textarea>
+      <!-- <button class="add-note" type="button">Add Another</button> -->
     </div>
-
-    <script>
-      function copyToClipboard(elementId) {
-        var text = document.getElementById(elementId).value;
-        let textarea = document.getElementById("select-this");
-        textarea.innerHTML = text;
-        textarea.focus();
-      }
-    </script>
   </body>
+
+  <script src="main.js"></script>
 </html>

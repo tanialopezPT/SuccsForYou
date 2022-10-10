@@ -34,15 +34,30 @@
       <div class="card">
         <div class="container">
           <h4><b>✅ Remain calm</b></h4>
-          <p id="p1">
-            The last thing you want to do is upset your client even more. Take a
-            deep breath and speak with a soft voice.
+          <p class="p1">The last thing you want to do is upset your client even more. Take a
+          deep breath and speak with a soft voice.">
+            
           </p>
         </div>
-        <a href="">
-          <button onclick="copyToClipboard('p1')">Add To Care Plan</button>
-        </a>
+        
+          <!-- <input type="button" value="Add to Care Plan" onClick="copy()"/> -->
+          <a href="careplan.html"></a>
+
+        <button onclick="copyText()">Add to care plan</button>
+        
+</a>
+      
+      </a>
       </div>
+
+      
+      <!-- <br />
+      <input id="addtocare" type="button" value="Add to Care Plan" onClick="copy()"/>
+      <br /> -->
+     
+              
+              
+
       <!-- <div class="card">
         <div class="container">
           <h4><b>✅ Remain calm</b></h4>
@@ -69,10 +84,10 @@
       </div>
     </main> -->
 
-    <div id="app">
+    <!-- <div id="app">
       <textarea id="select-this" class="note"></textarea>
       <button class="add-note" type="button">Add Another</button>
-    </div>
+    </div> -->
 
 
     <a href="secondpage.html">
@@ -80,16 +95,29 @@
       <a href="careplan.html">
         <button class="firstbutton">My Care Plan</button>
 
-      <script>
+        <!-- <script> 
+        
+        
 
-function copyToClipboard(elementId) {
-  var text = document.getElementById(elementId).value;
-  let textarea = document.getElementById("select-this");
-  textarea.innerHTML = text;
-  textarea.focus();
-}
-      </script>
+          function copy() {
+          var areaA = document.getElementById("areaA");
+          var areaB = document.getElementById("areaB");
+          var valueA = areaA.value;
+          areaB.value = valueA;
+        }
+        </script>
+       -->
       
-    </a>
+    <script> 
+    
+    const name = document.querySelector(".p1");
+
+    function copyText(){
+      document.getElementsByClassName(".p1").value =document.getElementsByClassName(".textbox").value}
+
+
+    </script>
+
+
   </body>
 </html>
