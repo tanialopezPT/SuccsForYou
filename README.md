@@ -1,1 +1,1 @@
-TinDog Starting Files
+Fun little project using HTML, CSS, Bootstrap. I love working with succulents at home and thought it would be cool to create a single page app for a faux company that delivers succulents to your door. I really liked the colors I chose and the images make it clean and simple. 
