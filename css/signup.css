@@ -1,0 +1,55 @@
+
+body {
+  margin: 0;
+}
+
+
+body {
+  background: url(../images/succ6.png) no-repeat center center fixed;
+  background-color: #1b9;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: bottom 125px;
+}
+
+
+nav {
+  margin-left: 20px;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat";
+}
+
+
+h1{
+  margin-top: 90px;
+ font-family: "Montserrat";
+ text-align: center;
+ font-size: 1rem ;
+ font-weight: bold;
+ color: white;
+
+}
+
+form {
+  width: 25%;
+  height: 35%;
+  margin: auto;
+  background-color: white;
+  margin-top: 135px;
+  padding: 40px;
+  box-shadow: 0px 2.98256px 7.4564px rgb(0, 0, 0);
+  opacity: 0.92;
+  
+  
+}
+
+.btn {
+  opacity: 1;
+}
